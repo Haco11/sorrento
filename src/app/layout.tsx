@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { Quicksand as Fontsans } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const fontSans = Fontsans({
   subsets: ["latin"],
@@ -21,8 +21,13 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}>
-        assssssssssssssss
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
