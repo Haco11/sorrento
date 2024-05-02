@@ -17,12 +17,12 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="relative h-[80vh] z-[-21]">
-      <div className="absolute w-full h-full z-[-1]">
+    <section className="relative h-[80vh]">
+      <div className="absolute w-full h-full">
         <Image
           src={pizza}
           alt="pizza-img"
-          className=" object-cover w-full h-[80vh] z-[-1]"
+          className=" object-cover w-full h-[80vh] "
         />
         <div className="absolute inset-0 bg-background opacity-30"></div>
       </div>
