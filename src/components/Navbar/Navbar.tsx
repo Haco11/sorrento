@@ -26,9 +26,11 @@ const Navbar = (props: Props) => {
 
   return (
     <nav
-      className={`py-5 fixed w-full transition-colors duration-300 z-10 ${
-        isScrolled ? "bg-background border-b" : "bg-transparent border-none"
-      } `}>
+      className={`py-5 fixed w-full transition-all duration-300 ease-in-out z-10 ${
+        isScrolled
+          ? "bg-background border-b "
+          : "bg-gradient-to-b from-background to-transparent border-none"
+      }`}>
       <div className="container mx-auto flex justify-between items-center z-10">
         <h2 className="text-s font-medium sm:text-4xl">Pizzaria Sorrento</h2>
         <div className="flex items-center gap-2">
@@ -36,7 +38,6 @@ const Navbar = (props: Props) => {
           <a href="tel:08-646-30-40" className="ml-2 text-xl">
             08-646-30-40
           </a>
-          <ThemeToggle />
         </div>
       </div>
     </nav>

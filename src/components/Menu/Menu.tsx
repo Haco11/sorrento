@@ -8,7 +8,7 @@ const Menu = (props: Props) => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   return (
     <>
-      <div className="space-y-8 container mx-auto px-4 mt-4">
+      <div className="space-y-8 container mx-auto px-4 mt-4 bg-gradient">
         <div className="flex gap-3 flex-wrap items-center justify-center p-4 rounded-md">
           {categories.map((category) => (
             <Button
@@ -37,7 +37,7 @@ const Menu = (props: Props) => {
                 {category.meals.map((meal) => (
                   <div
                     key={meal.id}
-                    className="border border-gray-200 p-4 rounded-lg space-y-2">
+                    className="border p-4 rounded-lg space-y-2">
                     <h2 className="text-xl font-semibold">{meal.name}</h2>
                     <p className="text-lg font-bold ">{meal.price} kr</p>
                     <ul className="list-none pl-0 space-x-2 flex flex-wrap text-sm ">
