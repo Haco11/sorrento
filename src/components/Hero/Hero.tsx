@@ -22,6 +22,7 @@ const Hero = (props: Props) => {
         <Image
           src={pizza}
           alt="pizza-img"
+          priority={true}
           className=" object-cover w-full h-[80vh] "
         />
         <div className="absolute inset-0 bg-background opacity-30"></div>

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Quicksand as Fontsans } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
@@ -10,10 +9,6 @@ const fontSans = Fontsans({
   variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700"],
 });
-export const metadata: Metadata = {
-  title: "Sorrento",
-  description: "Next.js TailwindCSS Template",
-};
 
 export default function RootLayout({
   children,
@@ -21,7 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
+      <head />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -33,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           <Navbar />
-          {children}
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
