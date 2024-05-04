@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import pizza from "@/../public/assets/Pizzabg.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -13,9 +13,30 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-type Props = {};
+interface DeliveryLinkProps {
+  url: string;
+  image: StaticImageData;
+  alt: string;
+  width: number;
+  height: number;
+}
+const FOODORA_URL = "https://www.foodora.se/restaurant/v6sj/pizzeria-sorrento";
+const UBEREATS_URL =
+  "https://www.ubereats.com/se/store/pizzeria-sorrento/L1faXXpDRuyHK7b3j993wQ";
 
-const Hero = (props: Props) => {
+const DeliveryLink: FC<DeliveryLinkProps> = ({
+  url,
+  image,
+  alt,
+  width,
+  height,
+}) => (
+  <a target="_blank" rel="noopener noreferrer" href={url}>
+    <Image alt={alt} src={image} width={width} height={height} />
+  </a>
+);
+
+const Hero = () => {
   return (
     <section className="relative h-[80vh]">
       <div className="absolute w-full h-full">
@@ -48,29 +69,20 @@ const Hero = (props: Props) => {
               </DialogDescription>
             </DialogHeader>
             <div className="flex justify-between items-center">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.foodora.se/restaurant/v6sj/pizzeria-sorrento">
-                <Image
-                  alt="Foodora icon"
-                  src={Foodora}
-                  width={150}
-                  height={50}
-                />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.ubereats.com/se/store/pizzeria-sorrento/L1faXXpDRuyHK7b3j993wQ">
-                <Image
-                  src={Ubereats}
-                  alt="Ubereats icon"
-                  width={80}
-                  height={50}
-                  className="dark:bg-white"
-                />
-              </a>
+              <DeliveryLink
+                url={FOODORA_URL}
+                image={Foodora}
+                alt="Foodora icon"
+                width={150}
+                height={50}
+              />
+              <DeliveryLink
+                url={UBEREATS_URL}
+                image={Ubereats}
+                alt="Ubereats icon"
+                width={80}
+                height={50}
+              />
             </div>
           </DialogContent>
         </Dialog>
