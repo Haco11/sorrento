@@ -46,11 +46,13 @@ const Hero = () => {
           priority={true}
           className=" object-cover w-full h-[80vh] "
         />
-        <div className="absolute inset-0 bg-[#ffecca] opacity-30"></div>
+        <div className="absolute inset-0 bg-[#514d45] opacity-30"></div>
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <h1 className="text-6xl font-bold text-center mb-4">
+        <h1
+          className="text-6xl font-bold text-center mb-4"
+          style={{ fontFamily: "Bangers, cursive" }}>
           Pizzaria Sorrento
         </h1>
         <Dialog>

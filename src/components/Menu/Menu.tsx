@@ -40,9 +40,9 @@ const Menu = (props: Props) => {
                     className="border p-4 rounded-lg space-y-2">
                     <h2 className="text-xl font-semibold">{meal.name}</h2>
                     <p className="text-lg font-bold ">{meal.price} kr</p>
-                    <ul className="list-none pl-0 space-x-2 flex flex-wrap text-sm ">
+                    <ul className="list-none pl-0 gap-1 flex flex-wrap text-sm ">
                       {meal.ingredients.map((ingredient, index) => (
-                        <li key={index}>{ingredient}</li>
+                        <li key={index}>{ingredient}, </li>
                       ))}
                     </ul>
                   </div>
