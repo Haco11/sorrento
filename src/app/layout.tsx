@@ -22,12 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        <script
-          defer
-          data-domain="pizzeriasorrento.se"
-          src="https://plausible.io/js/script.js"></script>
-      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
