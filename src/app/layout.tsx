@@ -22,6 +22,10 @@ export default function RootLayout({
           name="description"
           content="Välkommen till Sorrento, den bästa pizzan i Västertorp. Vi finns på Störtloppsvägen 26, 129 47 Hägersten."
         />
+        <script
+          defer
+          data-domain="pizzeriasorrento.se"
+          src="https://plausible.io/js/script.js"></script>
       </head>
       <body
         className={cn(
