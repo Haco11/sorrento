@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Foodora from "@/../public/assets/foodora.svg";
 import Ubereats from "@/../public/assets/ubereats.svg";
+import { Poppins as Font } from "next/font/google";
+
 import {
   Dialog,
   DialogContent,
@@ -35,6 +37,10 @@ const DeliveryLink: FC<DeliveryLinkProps> = ({
     <Image alt={alt} src={image} width={width} height={height} />
   </a>
 );
+const font = Font({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 const Hero = () => {
   return (
@@ -50,9 +56,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <h1
-          className="text-6xl font-bold text-center mb-4"
-          style={{ fontFamily: "Bangers, cursive" }}>
+        <h1 className={`text-6xl font-bold text-center mb-4 ${font}`}>
           Pizzaria Sorrento
         </h1>
         <Dialog>
