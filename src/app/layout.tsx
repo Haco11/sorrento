@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <title>Pizzaria Sorrento</title>
+        <meta
+          name="description"
+          content="Välkommen till Sorrento, den bästa pizzan i Västertorp. Vi finns på Störtloppsvägen 26, 129 47 Hägersten."
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
