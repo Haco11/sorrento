@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar/Navbar";
 import type { Metadata } from "next";
+import PlausibleProvider from "next-plausible";
 
 const fontSans = Fontsans({
   subsets: ["latin"],
@@ -22,6 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
+      <head>
+        <PlausibleProvider
+          domain="pizzeriasorrento.se"
+          trackLocalhost={true}
+          enabled={true}
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
