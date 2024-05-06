@@ -64,9 +64,9 @@ const Hero = () => {
                 Online bästtlningar
               </DialogTitle>
               <DialogDescription className="text-center">
-                Du kan välja mellan Foodora eller Uber eats för online
-                bästtlningar. Eller så kan du ringa oss på 08-646-30-40 för att
-                hämra uppden själv.
+                Du kan välja mellan Foodora eller Uber Eats för
+                onlinebeställningar. Alternativt kan du ringa oss på
+                08-646-30-40 för att hämta upp din beställning själv.
               </DialogDescription>
             </DialogHeader>
             <div className="flex justify-between items-center">
