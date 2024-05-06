@@ -47,21 +47,35 @@ const Hero = () => {
           priority={true}
           className=" object-cover w-full h-[80vh] "
         />
-        <div className="absolute inset-0 bg-[#514d45] opacity-30"></div>
+        <div className="absolute inset-0 bg-[#000000] opacity-30"></div>
       </div>
 
-      <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <h1 className="text-6xl font-bold text-center mb-4 ">
+      <div className="absolute inset-0 flex flex-col justify-center items-center ">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-center mb-4 text-white leading-none">
           Pizzaria Sorrento
         </h1>
+        <div className="text-white text-center mb-4 space-y-2">
+          <p className="text-lg font-semibold">MÅN-FRE kl:10:30-14:30.</p>
+          <div className="border-t border-white pt-2">
+            <p className="font-bold">Lunch 1: 120:-</p>
+            <p>Pizzanr. 1-27, Sallader, Kebab, Hamburgare, Pasta</p>
+          </div>
+          <div className="border-t border-white pt-2">
+            <p className="font-bold">Lunch 2: 135:-</p>
+            <p>Grillad Kyckling, Grillad Biff, LaxFile, Fläsknoisette</p>
+          </div>
+          <p className="border-t border-white pt-2">
+            Smör, Bröd, Sallader, Dryck, Kaffe ingår
+          </p>
+        </div>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline">Online bästtlningar</Button>
+            <Button variant="outline"> Online beställningar</Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
               <DialogTitle className="text-center">
-                Online bästtlningar
+                Online beställningar
               </DialogTitle>
               <DialogDescription className="text-center">
                 Du kan välja mellan Foodora eller Uber Eats för
