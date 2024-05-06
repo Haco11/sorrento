@@ -13,8 +13,7 @@ const Footer = (props: Props) => {
           </div>
           <div>
             <h2 className="text-xl font-semibold mt-4">Öppettider</h2>
-            <p>Mån–Ons: 10:30–21:30</p>
-            <p>Torsdag: 10:30–21:30</p>
+            <p>Mån–Tor: 10:30–21:30</p>
             <p>Fredag: 10:30–22</p>
             <p>Lör: 11–22</p>
             <p>Sön: 11–21:30</p>
@@ -22,7 +21,6 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <div className="mt-4 container ">
-        {" "}
         <p>
           &copy; {new Date().getFullYear()} Pizzaria Sorrento. Alla rättigheter
           reserverade.
