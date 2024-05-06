@@ -30,15 +30,15 @@ const Menu = (props: Props) => {
           )
           .map((category) => (
             <div key={category.id} className="space-y-4">
-              <h1 className="text-2xl font-bold uppercase ">
+              <h2 className="text-2xl font-bold uppercase ">
                 {category.title}
-              </h1>
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {category.meals.map((meal) => (
                   <div
                     key={meal.id}
                     className="border p-4 rounded-lg space-y-2">
-                    <h2 className="text-xl font-semibold">{meal.name}</h2>
+                    <h3 className="text-xl font-semibold">{meal.name}</h3>
                     <p className="text-lg font-bold ">{meal.price} kr</p>
                     <ul className="list-none pl-0 gap-1 flex flex-wrap text-sm ">
                       {meal.ingredients.map((ingredient, index) => (
