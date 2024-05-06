@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   title: "Pizzaria Sorrento",
   description:
     "Välkommen till Sorrento, den bästa pizzan i Västertorp. Vi finns på Störtloppsvägen 26, 129 47 Hägersten.",
+  keywords:
+    "Sorrento Pizzeria, Pizza, Västertorp, Hägersten, Restaurang, Mat, pizzeria, sorrento",
 };
 export default function RootLayout({
   children,
