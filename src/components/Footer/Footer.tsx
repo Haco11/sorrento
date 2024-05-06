@@ -24,7 +24,8 @@ const Footer = (props: Props) => {
       <div className="mt-4 container ">
         {" "}
         <p>
-          &copy; {new Date().getFullYear()} Our Restaurant. All rights reserved.
+          &copy; {new Date().getFullYear()} Pizzaria Sorrento. Alla rättigheter
+          reserverade.
         </p>
       </div>
     </footer>
