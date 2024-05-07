@@ -30,7 +30,7 @@ const Menu = (props: Props) => {
           )
           .map((category) => (
             <div key={category.id} className="space-y-4">
-              <h2 className="text-2xl font-bold uppercase ">
+              <h2 className="text-2xl font-bold uppercase text-center">
                 {category.title}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
