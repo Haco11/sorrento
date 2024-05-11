@@ -11,13 +11,16 @@ const fontSans = Fontsans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Pizzaria Sorrento",
   description:
     "Välkommen till Sorrento, den bästa pizzan i Västertorp. Vi finns på Störtloppsvägen 26, 129 47 Hägersten.",
   keywords:
     "Sorrento Pizzeria, Pizza, Västertorp, Hägersten, Restaurang, Mat, pizzeria, sorrento",
+  icons: "/icon.svg",
 };
+
+export { metadata };
 export default function RootLayout({
   children,
 }: Readonly<{
