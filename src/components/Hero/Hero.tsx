@@ -40,12 +40,12 @@ const DeliveryLink: FC<DeliveryLinkProps> = ({
 const Hero = () => {
   return (
     <section className="relative h-[80vh]">
-      <div className="absolute w-full h-full">
+      <div className="absolute">
         <Image
           src={pizza}
           alt="pizza-img"
           priority={true}
-          className=" object-cover w-full h-[80vh] "
+          className=" object-cover h-[80vh] "
         />
         <div className="absolute inset-0 bg-[#000000] opacity-30"></div>
       </div>
