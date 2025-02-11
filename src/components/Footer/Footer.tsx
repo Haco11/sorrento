@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
       <div className="container mx-auto flex-grow flex flex-col justify-between md:flex-row">
         <div className="flex flex-col md:flex-row justify-between items-start  md:space-x-10 w-full">
           <div>
-            <h1 className="text-2xl font-bold">Pizzaria Sorrento</h1>
+            <h1 className="text-2xl font-bold">Pizzeria Sorrento</h1>
             <p>Störtloppsvägen 26, 129 47 Hägersten</p>
           </div>
           <div>
@@ -22,7 +22,7 @@ const Footer = (props: Props) => {
       </div>
       <div className="mt-4 container ">
         <p>
-          &copy; {new Date().getFullYear()} Pizzaria Sorrento. Alla rättigheter
+          &copy; {new Date().getFullYear()} Pizzeria Sorrento. Alla rättigheter
           reserverade.
         </p>
       </div>

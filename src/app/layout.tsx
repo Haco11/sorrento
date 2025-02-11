@@ -12,7 +12,7 @@ const fontSans = Fontsans({
 });
 
 const metadata: Metadata = {
-  title: "Pizzaria Sorrento",
+  title: "Pizzeria Sorrento",
   description:
     "Välkommen till Sorrento, den bästa pizzan i Västertorp. Vi finns på Störtloppsvägen 26, 129 47 Hägersten.",
   keywords:

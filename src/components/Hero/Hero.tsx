@@ -52,7 +52,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 flex flex-col justify-center items-center ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-center mb-4 text-white leading-none">
-          Pizzaria Sorrento
+        Pizzeria Sorrento
         </h1>
         <div className="text-white text-center mb-4 space-y-2">
           <p className="text-lg font-semibold">MÅN-FRE kl:10:30-14:30.</p>
