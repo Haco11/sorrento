@@ -39,7 +39,7 @@ const DeliveryLink: FC<DeliveryLinkProps> = ({
 
 const Hero = () => {
   return (
-    <section className="relative h-[80vh]">
+    <section className="relative h-[80vh]" id="top">
       <div className="absolute">
         <Image
           src={pizza}
